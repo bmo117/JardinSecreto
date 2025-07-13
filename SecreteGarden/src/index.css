@@ -1,1 +1,19 @@
 @import "tailwindcss";
+
+@import "tailwindcss/preflight";
+@import "tailwindcss/utilities";
+
+
+
+
+  @theme {
+    --color-primary: #FADFE4;
+    --color-secondary: #FF758F;
+    --font-primary: "Tektur", "sans-serif"
+  }
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}

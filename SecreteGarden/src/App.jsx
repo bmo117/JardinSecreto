@@ -1,11 +1,15 @@
 import "./App.css";
+import { Routes, Route, Link } from "react-router-dom";
+import Home from "./pages/Home";
+import Plants from "./pages/Plants";
 
-function App() {
+export default function App() {
   return (
-    <>
-      <div className="bg-amber-800 w-40 h-40"></div>
-    </>
+    <div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<Plants />} />
+      </Routes>
+    </div>
   );
 }
-
-export default App;
