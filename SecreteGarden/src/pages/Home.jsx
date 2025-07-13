@@ -1,5 +1,9 @@
 import React from "react";
 
+import MenuBar from "../componets/menuBar";
+import EmergentImage from "../componets/EmegentImage";
+import AnimatedText from "../componets/AnimatedText";
+
 // const Home = () => {
 //   return (
 //     <div className="w-full h-screen bg-primary">
@@ -63,84 +67,12 @@ const Home = () => {
   return (
     <div className="w-full h-screen bg-primary">
       {/* Header fijo arriba */}
-      <div className="fixed top-0 left-0 right-0 z-50 flex items-center justify-center h-19 w-full">
-        <div className="w-[95%] h-10 bg-secondary rounded-2xl flex items-center justify-between">
-          <div className="w-8 h-8 bg-white rounded-full !ml-4 flex items-center justify-center">
-            <img
-              src="/img/sakIcon2.png"
-              alt=""
-              className="w-8 h-8 object-contain"
-            />
-          </div>
-          <div>
-            <p className="text-white font-primary">Jardín Secreto</p>
-          </div>
-          <div className="w-8 h-8 !mr-4 flex items-center justify-center">
-            <button aria-label="Menú">
-              <svg
-                className="w-8 h-8 text-white"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              </svg>
-            </button>
-          </div>
-        </div>
-      </div>
+      <MenuBar />
       <div className="pt-[76px] w-full h-full">
-        <div className="relative w-full  flex items-center justify-center !pt-28">
-          {/* Imagen */}
-          <img
-            src="/img/sakmain2.png"
-            alt=""
-            className="w-[90%] object-contain"
-          />
-        </div>
-        <div className="w-full h-fit flex items-center justify-center font-semibold !mt-8 font-primary">
-          <p>CULTIVA BELLEZA. REGALA PLANTAS</p>
-        </div>
-        {/* <div className="w-[80%] h-fit text-center !mt-2">
-          <p>
-            Trasforma cualquier rincon con plantas que armonizan tus espacios
-            con belleza natural
-          </p>
-        </div> */}
-
-        <div className="w-full h-fit text-center !mt-2 mx-auto flex items-center justify-center !mb-20">
-          <p className="w-[80%] font-primary">
-            Transforma cualquier rincón con plantas que armonizan tus espacios
-            con belleza natural
-          </p>
-        </div>
-        {/* <div>
-          <div className="flex flex-wrap justify-center gap-2">
-            <div className="w-[29%] bg-white rounded-lg shadow-md !p-2">
-              <img
-                src="https://res.cloudinary.com/dso8cvvoe/image/upload/v1752355828/naranjo2_tyym3p.png"
-                alt=""
-              />
-              <h2 className="text-lg font-bold">Tarjeta 1</h2>
-              <p>Contenido breve...</p>
-            </div>
-            <div className="w-[29%] bg-white rounded-lg shadow-md !p-2">
-              <h2 className="text-lg font-bold">Tarjeta 2</h2>
-              <p>Contenido breve...</p>
-            </div>
-            <div className="w-[29%] bg-white rounded-lg shadow-md !p-2">
-              <h2 className="text-lg font-bold">Tarjeta 3</h2>
-              <p>Contenido breve...</p>
-            </div>
-          </div>
-        </div> */}
+        <EmergentImage />
+        <AnimatedText />
         <div>
-          <div className="flex flex-wrap justify-center gap-4">
+          <div className="flex flex-wrap justify-center gap-4 !mt-16">
             <div className="w-[29%] h-40 md:w-80 bg-white/30 backdrop-blur-md border border-white/30 rounded-lg shadow-md  relative overflow-visible">
               <div className="w-[85%] h-[85%] absolute -top-10 left-1/2 transform -translate-x-1/2 z-10">
                 <img
