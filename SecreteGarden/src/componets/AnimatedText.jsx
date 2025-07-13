@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-const AnimatedText = () => {
+const AnimatedText = ({ title, body }) => {
   return (
     <>
       <motion.div
@@ -9,7 +9,7 @@ const AnimatedText = () => {
         transition={{ duration: 0.8, ease: "easeOut" }}
         className="w-full h-fit flex items-center justify-center font-semibold !mt-8 font-primary"
       >
-        <p>CULTIVA BELLEZA. REGALA PLANTAS</p>
+        <p>{title}</p>
       </motion.div>
 
       <motion.div
@@ -18,10 +18,7 @@ const AnimatedText = () => {
         transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
         className="w-full h-fit text-center mt-2 mx-auto flex items-center justify-center mb-20"
       >
-        <p className="w-[80%] font-primary">
-          Transforma cualquier rincón con plantas que armonizan tus espacios con
-          belleza natural
-        </p>
+        <p className="w-[80%] font-primary">{body}</p>
       </motion.div>
     </>
   );

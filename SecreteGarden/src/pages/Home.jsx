@@ -4,6 +4,8 @@ import MenuBar from "../componets/menuBar";
 import EmergentImage from "../componets/EmegentImage";
 import AnimatedText from "../componets/AnimatedText";
 import AllButton from "../componets/AllButton";
+import VerticalImageComparison from "../componets/VerticalComparer";
+import AnimatedTextV2 from "../componets/AnimatedTextV2";
 
 //   return (
 //     <div className="w-full h-screen bg-primary">
@@ -69,7 +71,12 @@ const Home = () => {
       <MenuBar />
       <div className="pt-[76px] w-full h-full">
         <EmergentImage />
-        <AnimatedText />
+        <AnimatedText
+          title={"CULTIVA BELLEZA. REGALA PLANTAS"}
+          body={
+            "Transforma cualquier rincón con plantas que armonizan tus espacios conbelleza natural"
+          }
+        />
         <div>
           <div className="flex flex-wrap justify-center gap-4 !mt-16">
             <div className="w-[29%] h-35 md:h-80 bg-white/30 backdrop-blur-md border border-white/30 rounded-lg shadow-md  relative overflow-visible !p-2 !mb-12">
@@ -194,6 +201,25 @@ const Home = () => {
         </div>
         <div className="w-full flex items-center justify-center">
           <AllButton />
+        </div>
+
+        <AnimatedTextV2
+          title={"Transforma tus espacios"}
+          body={
+            "Descubre cómo un toque de naturaleza puede cambiar por completo la energía de tu hogar o negocio. Compara el antes y después y vive la diferencia que crean las plantas en la decoración."
+          }
+        />
+        <div className="w-full flex items-center justify-center !rounded-lg !mt-14 ">
+          <VerticalImageComparison
+            before={
+              "https://res.cloudinary.com/dso8cvvoe/image/upload/v1752420139/PASTO_k4qw4l.jpg"
+            }
+            after={
+              "https://res.cloudinary.com/dso8cvvoe/image/upload/v1752420258/despues_hbeolh.jpg"
+            }
+            altBefore={"Antes"}
+            altAfter={"Despues"}
+          />
         </div>
         <div className="w-10 h-[1000px] bg-gray-400"></div>
       </div>
