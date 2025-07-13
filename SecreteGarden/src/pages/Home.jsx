@@ -5,7 +5,6 @@ import EmergentImage from "../componets/EmegentImage";
 import AnimatedText from "../componets/AnimatedText";
 import AllButton from "../componets/AllButton";
 
-// const Home = () => {
 //   return (
 //     <div className="w-full h-screen bg-primary">
 //       <div className="w-full h-screen">
@@ -67,7 +66,6 @@ import AllButton from "../componets/AllButton";
 const Home = () => {
   return (
     <div className="w-full h-fit bg-primary">
-      {/* Header fijo arriba */}
       <MenuBar />
       <div className="pt-[76px] w-full h-full">
         <EmergentImage />

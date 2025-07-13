@@ -20,21 +20,11 @@ import { useInView } from "react-intersection-observer";
 
 const AllButton = () => {
   const { ref, inView } = useInView({
-    triggerOnce: true, // Solo se ejecuta una vez
+    triggerOnce: false, // Solo se ejecuta una vez
     threshold: 0.1, // 10% visible para disparar la animación
   });
 
   return (
-    // <motion.button
-    //   ref={ref}
-    //   initial={{ opacity: 0, scale: 0.5 }}
-    //   animate={inView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.5 }}
-    //   transition={{ duration: 0.6, ease: "easeOut" }}
-    //   className="!font-primary !bg-secondary  !font-semibold !rounded-full text-lg font-semibold shadow-lg hover:scale-105 transition-transform duration-300 !py-2 !px-3"
-    // >
-    //   {` Ver Todo >`}
-    // </motion.button>
-
     <motion.button
       ref={ref}
       initial={{ opacity: 0, scale: 0.5 }}
