@@ -23,13 +23,13 @@
 
 // export default VerticalImageCompare;
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ReactCompareImage from "react-compare-image";
 
 const VerticalImageCompare = ({ before, after, altBefore, altAfter }) => {
   const [isDragging, setIsDragging] = useState(false);
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (isDragging) {
       document.body.style.overflow = "hidden";
     } else {
@@ -48,7 +48,7 @@ const VerticalImageCompare = ({ before, after, altBefore, altAfter }) => {
         rightImage={after}
         leftImageLabel={altBefore}
         rightImageLabel={altAfter}
-        vertical={false}
+        vertical={false} // Horizontal
         sliderLineColor="#fff"
         handleSize={40}
         disableHover
