@@ -249,7 +249,7 @@ const Home = () => {
 
         <div className="w-full flex items-center justify-center !rounded-lg !mt-4">
           <img
-            className="w-[90%] !rounded-lg"
+            className="w-[80%] !rounded-lg"
             src="https://res.cloudinary.com/dso8cvvoe/image/upload/v1752449772/Screenshot_2025-07-13_174507_vn6ibj.png"
             alt=""
           />

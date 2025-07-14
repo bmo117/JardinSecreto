@@ -39,7 +39,7 @@ const VerticalImageCompare = ({ before, after, altBefore, altAfter }) => {
 
   return (
     <div
-      className="w-[90%] max-w-md mx-auto select-none touch-none rounded-lg overflow-hidden border-2 border-white"
+      className="w-[80%] max-w-md mx-auto select-none touch-none rounded-lg overflow-hidden !border-2 !border-white"
       onTouchStart={() => setIsDragging(true)}
       onTouchEnd={() => setIsDragging(false)}
     >
