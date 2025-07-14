@@ -286,7 +286,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="w-full flex items-center justify-center font-primary bg-secondary   !pb-4">
+        <div className="w-full flex items-center justify-center font-primary bg-secondary   !pb-16">
           <p className="text-sm mt-2">
             © BMO Industries. Todos los derechos reservados.
           </p>
