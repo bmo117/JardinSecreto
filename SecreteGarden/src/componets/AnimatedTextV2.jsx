@@ -33,7 +33,7 @@ const AnimatedTextV2 = ({ title, body }) => {
   return (
     <div
       ref={ref}
-      className="w-full flex flex-col items-center justify-center mb-20 !mt-8"
+      className="w-full flex flex-col items-center justify-center mb-20 !mt-4"
     >
       <motion.p
         custom={0}
@@ -50,7 +50,7 @@ const AnimatedTextV2 = ({ title, body }) => {
         initial="hidden"
         animate={controls}
         variants={textVariants}
-        className="w-[80%] text-justify font-primary !mt-4"
+        className="w-[85%] text-justify font-primary !mt-4"
       >
         {body}
       </motion.p>

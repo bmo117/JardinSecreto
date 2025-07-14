@@ -1,20 +1,3 @@
-// import { motion } from "framer-motion";
-
-// const AllButton = () => {
-//   return (
-//     <motion.button
-//       initial={{ opacity: 0, scale: 0.5 }}
-//       animate={{ opacity: 1, scale: 1 }}
-//       transition={{ duration: 0.6, ease: "easeOut" }}
-//       className="!bg-secondary text-white !rounded-full text-lg font-semibold shadow-lg hover:scale-105 transition-transform duration-300 !py-2 !px-3"
-//     >
-//       Ver Todo
-//     </motion.button>
-//   );
-// };
-
-// export default AllButton;
-
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 

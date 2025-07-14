@@ -6,6 +6,7 @@ import AnimatedText from "../componets/AnimatedText";
 import AllButton from "../componets/AllButton";
 import VerticalImageComparison from "../componets/VerticalComparer";
 import AnimatedTextV2 from "../componets/AnimatedTextV2";
+import ContactInfo from "../componets/Contact";
 
 //   return (
 //     <div className="w-full h-screen bg-primary">
@@ -67,7 +68,7 @@ import AnimatedTextV2 from "../componets/AnimatedTextV2";
 // export default Home;
 const Home = () => {
   return (
-    <div className="w-full h-fit bg-primary">
+    <div className="w-full h-fit bg-primary overflow-hidden">
       <MenuBar />
       <div className="pt-[76px] w-full h-full">
         <EmergentImage />
@@ -221,7 +222,75 @@ const Home = () => {
             altAfter={"Despues"}
           />
         </div>
-        <div className="w-10 h-[1000px] bg-gray-400"></div>
+        <AnimatedTextV2
+          title={"!Naturaleza en tu hogar elegancia en cada hoja!"}
+          body={
+            "Convierte cada rincón en un espacio lleno de vida. Nuestras plantas son más que decoración: son un detalle de serenidad y estilo natural"
+          }
+        />
+        <div className="w-full flex items-center justify-center !rounded-lg !mt-14 ">
+          <VerticalImageComparison
+            before={
+              "https://res.cloudinary.com/dso8cvvoe/image/upload/v1752448257/before1_xf2rqi.png"
+            }
+            after={
+              "https://res.cloudinary.com/dso8cvvoe/image/upload/v1752448305/vert2_hufqcn.jpg"
+            }
+            altBefore={"Antes"}
+            altAfter={"Despues"}
+          />
+        </div>
+        <AnimatedTextV2
+          title={"Ubicacion"}
+          body={
+            "Te esperamos en nuestro vivero, un espacio donde podrás inspirarte y elegir las plantas perfectas para transformar tu hogar. Visítanos y descubre cómo darle vida y elegancia a tus espacios con naturaleza real."
+          }
+        />
+
+        <div className="w-full flex items-center justify-center !rounded-lg !mt-4">
+          <img
+            className="w-[90%] !rounded-lg"
+            src="https://res.cloudinary.com/dso8cvvoe/image/upload/v1752449772/Screenshot_2025-07-13_174507_vn6ibj.png"
+            alt=""
+          />
+        </div>
+
+        <AnimatedTextV2
+          title={"Contacto"}
+          body={
+            "¿Tienes dudas o buscas asesoría personalizada? Escríbenos. Estamos aquí para ayudarte a encontrar las plantas perfectas para tu espacio."
+          }
+        />
+
+        <ContactInfo />
+
+        <div className="w-full h-50 bg-secondary flex items-center !px-6">
+          {/* Izquierda: datos de contacto y ubicación */}
+          <div className="flex items-center">
+            <div className="w-1/2  font-primary space-y-1 text-sm">
+              <p>Contacto: 729 138 3936</p>
+              <p>
+                Ubicación: Carretera, Al Centro Ceremonial Otomí N°2, Temoaya,
+                Méx.
+              </p>
+            </div>
+
+            {/* Derecha: perrito, nombre y texto de derechos */}
+            <div className="w-1/2 flex flex-col items-center justify-center  font-primary  ">
+              <img
+                src="https://res.cloudinary.com/dso8cvvoe/image/upload/v1752457522/ufo_a887re.png"
+                alt="Perrito Rex"
+                className="w-16 h-16 mb-1"
+              />
+              <p className="text-lg font-semibold">Rex</p>
+            </div>
+          </div>
+        </div>
+        <div className="w-full flex items-center justify-center font-primary bg-secondary   !pb-4">
+          <p className="text-sm mt-2">
+            © BMO Industries. Todos los derechos reservados.
+          </p>
+        </div>
       </div>
     </div>
   );
