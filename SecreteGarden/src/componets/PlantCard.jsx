@@ -37,7 +37,7 @@ const PlantCard = ({ image, title, description, details }) => {
       initial={false}
       animate={{
         scale: isExpanded ? 2.05 : 1,
-        backgroundColor: isExpanded ? "#ffffffcc" : "#ffffff1a",
+        backgroundColor: isExpanded ? "#ffffffcc" : "#ffffff66",
         x: isExpanded ? "-50%" : "0%",
         y: isExpanded ? "-50%" : "0%",
       }}
@@ -48,7 +48,7 @@ const PlantCard = ({ image, title, description, details }) => {
         top: isExpanded ? "50%" : "auto",
         left: isExpanded ? "50%" : "auto",
       }}
-      className="w-[29%] h-35 md:h-80 bg-white/30 backdrop-blur-md border border-white/30 rounded-lg shadow-md  relative overflow-visible !p-2 !mb-12"
+      className="w-[29%] h-35 md:h-80 bg-white/30 !backdrop-blur-md border border-white/30 rounded-lg shadow-md  relative overflow-visible !p-2 !mb-12"
     >
       <div className="w-[85%] h-[85%] absolute -top-10 left-1/2 transform -translate-x-1/2 z-10">
         <img
@@ -72,7 +72,7 @@ const PlantCard = ({ image, title, description, details }) => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 20 }}
             transition={{ duration: 0.9 }}
-            className="mt-4 text-white/70 text-sm !z-30"
+            className="mt-4 text-white/70 text-sm !z-30 backdrop-blur-md"
           >
             {details}
           </motion.div>
