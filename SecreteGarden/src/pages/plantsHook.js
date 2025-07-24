@@ -1,7 +1,90 @@
 import { useState } from "react";
 
 export const usePlantHook = () => {
-  const [view, setview] = useState("home");
+  // const [view, setview] = useState("home");
 
-  return {};
+  const plants = [
+    {
+      name: "Italian Cypress",
+      nameSpanish: "Ciprés italiano",
+      scientificName: "",
+      imageUrl: "",
+      desc: "",
+      tipo: ["Árboles"],
+      luzRequerida: ["Sol directo"],
+      tamanio: ["Grande"],
+      riego: ["Bajo mantenimiento (poca agua)"],
+      clima: ["Clima templado", "Resistente al calor"],
+      mascotas: true,
+    },
+    {
+      name: "Lemon Cedar Spiral",
+      nameSpanish: "Cedro limón en espiral",
+      scientificName: "",
+      imageUrl: "",
+      desc: "",
+      tipo: ["Árboles"],
+      luzRequerida: ["Sol directo", "Sombra parcial"],
+      tamanio: ["Mediana", "Grande"],
+      riego: ["Moderado"],
+      clima: ["Clima templado"],
+      mascotas: true,
+    },
+    {
+      name: "Sweetgum",
+      nameSpanish: "Liquidambar",
+      scientificName: "",
+      imageUrl: "",
+      desc: "",
+      tipo: ["Árboles"],
+      luzRequerida: ["Sol directo"],
+      tamanio: ["Grande"],
+      riego: ["Moderado"],
+      clima: ["Clima templado", "Resistente al frío"],
+      mascotas: true,
+    },
+    {
+      name: "Maxi Martinel",
+      nameSpanish: "Maxi Martinel",
+      scientificName: "",
+      imageUrl: "",
+      desc: "",
+      tipo: ["Árboles"],
+      luzRequerida: ["Sol directo"],
+      tamanio: ["Mediana"],
+      riego: ["Moderado"],
+      clima: ["Clima templado"],
+      mascotas: true,
+    },
+    {
+      name: "Dollar Tree",
+      nameSpanish: "Dólar",
+      scientificName: "",
+      imageUrl: "",
+      desc: "",
+      tipo: ["Árboles"],
+      luzRequerida: ["Sol directo", "Sombra parcial"],
+      tamanio: ["Mediana"],
+      riego: ["Moderado"],
+      clima: ["Clima templado"],
+      mascotas: true,
+    },
+    {
+      name: "Eucalyptus",
+      nameSpanish: "Eucalipto",
+      scientificName: "",
+      imageUrl: "",
+      desc: "",
+      tipo: ["Árboles"],
+      luzRequerida: ["Sol directo"],
+      tamanio: ["Grande"],
+      riego: ["Moderado"],
+      clima: ["Clima templado", "Resistente al calor"],
+      mascotas: false,
+    },
+  ];
+
+  return {
+    plants,
+  };
 };

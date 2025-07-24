@@ -1,7 +1,16 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useRef, useEffect, useState } from "react";
 
-const PlantCard = ({ image, title, description, details }) => {
+const PlantCard = ({
+  image,
+  title,
+  description,
+  details,
+  luz = "",
+  mascotas = true,
+  clima = "",
+  tamanio = "",
+}) => {
   const [isExpanded, setIsExpanded] = useState(false);
   const cardRef = useRef(null);
 
@@ -58,11 +67,24 @@ const PlantCard = ({ image, title, description, details }) => {
         />
       </div>
 
-      <h2 className="text-lg font-bold text-center !mt-16 font-primary">
+      {/* <h2 className="text-lg font-bold text-center !mt-16 font-primary">
         {title}
+      </h2> */}
+      <h2
+        className={`text-center !mt-16 font-primary font-bold ${
+          title.length > 11 ? "!text-xs" : "!text-xs"
+        }`}
+      >
+        <p className={`${isExpanded ? "text-[8px]" : "text-xs"}`}>{title}</p>
       </h2>
       <div className="w-full flex items-center justify-center">
-        <p className="ttext-center text-sm font-primary">{description}</p>
+        <p
+          className={`${
+            isExpanded ? "text-[8px]" : "text-xs"
+          } text-center  font-primary`}
+        >
+          {description}
+        </p>
       </div>
 
       <AnimatePresence>
@@ -72,9 +94,38 @@ const PlantCard = ({ image, title, description, details }) => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 20 }}
             transition={{ duration: 0.9 }}
-            className="mt-4 text-white/70 text-sm !z-30 backdrop-blur-md"
+            className="mt-4 text-black/70 !text-xs !z-30 backdrop-blur-md"
           >
-            {details}
+            <div className="flex flex-col">
+              <p
+                className={`${
+                  isExpanded ? "text-[8px]" : "text-xs"
+                } font-thin `}
+              >
+                {tamanio}
+              </p>
+              <p
+                className={`${
+                  isExpanded ? "text-[8px]" : "text-xs"
+                } font-thin `}
+              >
+                {clima}
+              </p>
+              <p
+                className={`${
+                  isExpanded ? "text-[8px]" : "text-xs"
+                } font-thin `}
+              >
+                {luz}
+              </p>
+              <p
+                className={`${
+                  isExpanded ? "text-[8px]" : "text-xs"
+                } font-thin `}
+              >
+                {mascotas}
+              </p>
+            </div>
           </motion.div>
         )}
       </AnimatePresence>

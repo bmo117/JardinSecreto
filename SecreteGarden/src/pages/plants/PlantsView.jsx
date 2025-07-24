@@ -1,8 +1,11 @@
 import React from "react";
 import MenuBar from "../../componets/menuBar";
 import AnimatedFilter from "../../componets/AnimateFilter";
+import { usePlantHook } from "../plantsHook";
+import PlantCard from "../../componets/PlantCard";
 
 function PlantsView() {
+  const { plants } = usePlantHook();
   return (
     <div className="w-full h-fit bg-primary overflow-hidden">
       <MenuBar />
@@ -40,6 +43,23 @@ function PlantsView() {
         </div> */}
 
         <AnimatedFilter />
+
+        <div className="flex flex-wrap justify-center gap-4 !mt-16">
+          {plants.map((item) => (
+            <PlantCard
+              image={
+                "https://res.cloudinary.com/dso8cvvoe/image/upload/v1752355828/naranjo2_tyym3p.png"
+              }
+              title={item.nameSpanish}
+              description={item.tipo}
+              details={"detalles"}
+              tamanio={item.tamanio}
+              clima={item.clima}
+              luz={item.luzRequerida}
+              mascotas={item.mascotas}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );
