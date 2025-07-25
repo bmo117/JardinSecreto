@@ -5,7 +5,8 @@ import { usePlantHook } from "../plantsHook";
 import PlantCard from "../../componets/PlantCard";
 
 function PlantsView() {
-  const { plants } = usePlantHook();
+  const { filteredPlants } = usePlantHook();
+
   return (
     <div className="w-full h-fit bg-primary overflow-hidden">
       <MenuBar />
@@ -28,25 +29,13 @@ function PlantsView() {
             </div>
           </div>
         </div>
-        {/* <div className="w-full flex items-center justify-center">
-          <div className="!pl-3 !pr-3 !pt-1 !pb-1 bg-secondary !rounded-lg  flex items-center gap-2">
-            Filtros
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="w-4 h-4 transition-transform duration-300 rotate-90"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path d="M8 5v14l11-7z" />
-            </svg>
-          </div>
-        </div> */}
 
         <AnimatedFilter />
 
         <div className="flex flex-wrap justify-center gap-4 !mt-16">
-          {plants.map((item) => (
+          {filteredPlants.map((item, idx) => (
             <PlantCard
+              key={idx}
               image={item.imageUrl}
               title={item.nameSpanish}
               description={item.tipo}

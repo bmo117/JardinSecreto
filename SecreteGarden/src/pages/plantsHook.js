@@ -1,9 +1,9 @@
-import { useState } from "react";
+import { useEffect, useMemo, useState } from "react";
+
+import useFilterStore from "../stores/filters.store";
 
 export const usePlantHook = () => {
-  // const [view, setview] = useState("home");
-
-  const plants = [
+  const allPlants = [
     {
       name: "Italian Cypress",
       nameSpanish: "Ciprés italiano",
@@ -89,8 +89,41 @@ export const usePlantHook = () => {
       mascotas: false,
     },
   ];
+  const { filtrosSeleccionados } = useFilterStore();
+  const [plants, setPlants] = useState(allPlants);
 
-  return {
-    plants,
-  };
+  const filteredPlants = useMemo(() => {
+    const filters = filtrosSeleccionados;
+
+    return allPlants.filter((plant) => {
+      const matchTipo =
+        !filters.Tipo?.length ||
+        filters.Tipo.some((tipo) => plant.tipo.includes(tipo));
+      const matchLuz =
+        !filters.Luz?.length ||
+        filters.Luz.some((luz) => plant.luzRequerida.includes(luz));
+      const matchTamaño =
+        !filters.Tamaño?.length ||
+        filters.Tamaño.some((tam) => plant.tamanio.includes(tam));
+      const matchRiego =
+        !filters.Riego?.length ||
+        filters.Riego.some((riego) => plant.riego.includes(riego));
+      const matchClima =
+        !filters.Clima?.length ||
+        filters.Clima.some((clima) => plant.clima.includes(clima));
+      const matchMascotas =
+        filters.Mascotas == null || plant.mascotas === filters.Mascotas[0];
+
+      return (
+        matchTipo &&
+        matchLuz &&
+        matchTamaño &&
+        matchRiego &&
+        matchClima &&
+        matchMascotas
+      );
+    });
+  }, [filtrosSeleccionados]);
+
+  return { plants, filteredPlants };
 };
