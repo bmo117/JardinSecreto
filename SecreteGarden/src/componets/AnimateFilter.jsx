@@ -64,6 +64,8 @@ const filtros = {
     "Flores",
     "Arbustos",
     "Árboles pequeños",
+    "Árboles grandes",
+    "Árboles medianos",
   ],
   Luz: [
     "Sol directo",
@@ -109,7 +111,12 @@ const AnimatedFilter = () => {
             initial={{ scaleY: 0, opacity: 0, originY: 0 }}
             animate={{ scaleY: 1, opacity: 1 }}
             exit={{ scaleY: 0, opacity: 0 }}
-            transition={{ type: "spring", stiffness: 100, damping: 12 }}
+            transition={{
+              type: "spring",
+              stiffness: 100,
+              damping: 12,
+              duration: 0.5,
+            }}
             className="w-[100%] mt-4 !bg-secondary backdrop-blur-md !border !border-white/40  !p-4 shadow-lg space-y-6 "
           >
             {Object.entries(filtros).map(([categoria, opciones], index) => (

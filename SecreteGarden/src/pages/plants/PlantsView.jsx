@@ -47,9 +47,7 @@ function PlantsView() {
         <div className="flex flex-wrap justify-center gap-4 !mt-16">
           {plants.map((item) => (
             <PlantCard
-              image={
-                "https://res.cloudinary.com/dso8cvvoe/image/upload/v1752355828/naranjo2_tyym3p.png"
-              }
+              image={item.imageUrl}
               title={item.nameSpanish}
               description={item.tipo}
               details={"detalles"}
@@ -57,6 +55,7 @@ function PlantsView() {
               clima={item.clima}
               luz={item.luzRequerida}
               mascotas={item.mascotas}
+              riego={item.riego}
             />
           ))}
         </div>
