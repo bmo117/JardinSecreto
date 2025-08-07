@@ -8,7 +8,7 @@ function PlantsView() {
   const { filteredPlants } = usePlantHook();
 
   return (
-    <div className="w-full h-fit bg-primary overflow-hidden">
+    <div className="w-full h-[1000px] bg-primary overflow-hidden">
       <MenuBar />
       <div className="!pt-[76px] w-full !h-full font-primary">
         <div className="w-full h-fit flex items-center justify-center">
