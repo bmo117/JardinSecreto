@@ -133,14 +133,14 @@ const AnimatedFilter = () => {
               transition={{ duration: 0.3 }}
             >
               {/* Cerrar botón */}
-              {/* <div className="flex justify-end mb-4">
+              <div className="flex justify-end mb-4">
                 <button
                   className="text-white text-sm hover:underline"
                   onClick={() => setShowFilters(false)}
                 >
-                  Cerrar ✕
+                  ✕
                 </button>
-              </div> */}
+              </div>
 
               {/* Filtros */}
               {Object.entries(filtros).map(([categoria, opciones], index) => (
