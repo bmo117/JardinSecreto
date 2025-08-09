@@ -126,7 +126,7 @@ const AnimatedFilter = () => {
 
             {/* Modal */}
             <motion.div
-              className="fixed top-[55%] left-1/2 z-50 w-[90%] max-w-2xl max-h-[90vh] overflow-y-auto transform -translate-x-1/2 -translate-y-1/2 bg-secondary backdrop-blur-md border border-white/40 !p-6 shadow-xl rounded-lg !space-y-2"
+              className="fixed top-[55%] left-1/2 z-50 w-[90%] max-w-2xl max-h-[90vh] overflow-y-auto transform -translate-x-1/2 -translate-y-1/2 bg-secondary backdrop-blur-md border border-white/40 !p-6 shadow-xl rounded-2xl !space-y-2"
               initial={{ scale: 0.8, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.8, opacity: 0 }}

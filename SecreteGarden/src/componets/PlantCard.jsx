@@ -123,7 +123,7 @@ const PlantCard = ({
                     isExpanded ? "text-[6px]" : "text-xs"
                   } font-thin `}
                 >
-                  {riego}
+                  {Array.isArray(riego) ? riego.join(", ") : riego}
                 </p>
               </div>
               <div className="flex justify-start items-center">
