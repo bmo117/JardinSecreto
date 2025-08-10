@@ -9,6 +9,8 @@ import AnimatedTextV2 from "../componets/AnimatedTextV2";
 import ContactInfo from "../componets/Contact";
 import PlantCard from "../componets/PlantCard";
 
+import { usePlantHook } from "./plantsHook";
+
 //   return (
 //     <div className="w-full h-screen bg-primary">
 //       <div className="w-full h-screen">
@@ -68,6 +70,7 @@ import PlantCard from "../componets/PlantCard";
 
 // export default Home;
 const Home = () => {
+  const { randomPlants } = usePlantHook();
   return (
     <div className="w-full h-fit bg-primary overflow-hidden">
       <MenuBar />
@@ -81,78 +84,20 @@ const Home = () => {
         />
         <div>
           <div className="flex flex-wrap justify-center gap-4 !mt-16">
-            <PlantCard
-              image={
-                "https://res.cloudinary.com/dso8cvvoe/image/upload/v1752355828/naranjo2_tyym3p.png"
-              }
-              title={"Naranjo"}
-              description={"Frutal"}
-              details={"detalles"}
-            />
-            <PlantCard
-              image={
-                "https://res.cloudinary.com/dso8cvvoe/image/upload/v1752355828/naranjo2_tyym3p.png"
-              }
-              title={"Naranjo"}
-              description={"Frutal"}
-              details={"detalles"}
-            />
-            <PlantCard
-              image={
-                "https://res.cloudinary.com/dso8cvvoe/image/upload/v1752355828/naranjo2_tyym3p.png"
-              }
-              title={"Naranjo"}
-              description={"Frutal"}
-              details={"detalles"}
-            />
-            <PlantCard
-              image={
-                "https://res.cloudinary.com/dso8cvvoe/image/upload/v1752355828/naranjo2_tyym3p.png"
-              }
-              title={"Naranjo"}
-              description={"Frutal"}
-              details={"detalles"}
-            />
-            <PlantCard
-              image={
-                "https://res.cloudinary.com/dso8cvvoe/image/upload/v1752355828/naranjo2_tyym3p.png"
-              }
-              title={"Naranjo"}
-              description={"Frutal"}
-              details={"detalles"}
-            />
-            <PlantCard
-              image={
-                "https://res.cloudinary.com/dso8cvvoe/image/upload/v1752355828/naranjo2_tyym3p.png"
-              }
-              title={"Naranjo"}
-              description={"Frutal"}
-              details={"detalles"}
-            />
-            <PlantCard
-              image={
-                "https://res.cloudinary.com/dso8cvvoe/image/upload/v1752355828/naranjo2_tyym3p.png"
-              }
-              title={"Naranjo"}
-              description={"Frutal"}
-              details={"detalles"}
-            />
-            <PlantCard
-              image={
-                "https://res.cloudinary.com/dso8cvvoe/image/upload/v1752355828/naranjo2_tyym3p.png"
-              }
-              title={"Naranjo"}
-              description={"Frutal"}
-              details={"detalles"}
-            />
-            <PlantCard
-              image={
-                "https://res.cloudinary.com/dso8cvvoe/image/upload/v1752355828/naranjo2_tyym3p.png"
-              }
-              title={"Naranjo"}
-              description={"Frutal"}
-              details={"detalles"}
-            />
+            {randomPlants.map((item, idx) => (
+              <PlantCard
+                key={idx}
+                image={item.imageUrl}
+                title={item.nameSpanish}
+                description={item.tipo}
+                details={"detalles"}
+                tamanio={item.tamanio}
+                clima={item.clima}
+                luz={item.luzRequerida}
+                mascotas={item.mascotas}
+                riego={item.riego}
+              />
+            ))}
 
             {/* ...otras tarjetas iguales... */}
           </div>

@@ -3,6 +3,12 @@ import { useEffect, useMemo, useState } from "react";
 import useFilterStore from "../stores/filters.store";
 
 export const usePlantHook = () => {
+  const [randomPlants, setRandomPlants] = useState([]);
+
+  useEffect(() => {
+    const res = getRandomObjects(allPlants);
+    setRandomPlants(res);
+  }, []);
   const allPlants = [
     {
       name: "Italian Cypress",
@@ -663,5 +669,12 @@ export const usePlantHook = () => {
     });
   }, [filtrosSeleccionados]);
 
-  return { plants, filteredPlants };
+  function getRandomObjects(arr, count = 9) {
+    // Copiamos el arreglo para no modificar el original
+    const shuffled = [...arr].sort(() => Math.random() - 0.5);
+    // Retornamos los primeros 'count' elementos
+    return shuffled.slice(0, count);
+  }
+
+  return { plants, filteredPlants, randomPlants };
 };
