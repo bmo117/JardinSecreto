@@ -81,7 +81,7 @@ const MenuBar = () => {
               <p>Macetas</p>
               <p>Contacto</p>
               <p>Jardin digital</p>
-              <div className="w-[40%] rounded-bl-full">
+              <div className="w-[40%] rounded-bl-full !mt-6">
                 <img
                   src="https://res.cloudinary.com/dso8cvvoe/image/upload/v1754770903/ocote_ncuinj.png"
                   alt=""
