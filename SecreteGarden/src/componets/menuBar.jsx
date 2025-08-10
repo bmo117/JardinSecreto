@@ -77,8 +77,16 @@ const MenuBar = () => {
                 ✕
               </button>
               <p>Inicio</p>
-              <p>Catálogo</p>
+              <p>Plantas</p>
+              <p>Macetas</p>
               <p>Contacto</p>
+              <p>Jardin digital</p>
+              <div className="w-[40%] rounded-bl-full">
+                <img
+                  src="https://res.cloudinary.com/dso8cvvoe/image/upload/v1754770903/ocote_ncuinj.png"
+                  alt=""
+                />
+              </div>
             </div>
           </motion.div>
         )}
