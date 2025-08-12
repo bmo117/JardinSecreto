@@ -79,7 +79,7 @@ const Home = () => {
         <AnimatedText
           title={"CULTIVA BELLEZA. REGALA PLANTAS"}
           body={
-            "Transforma cualquier rincón con plantas que armonizan tus espacios conbelleza natural"
+            "Transforma cualquier rincón con plantas que armonizan tus espacios con belleza natural"
           }
         />
         <div>

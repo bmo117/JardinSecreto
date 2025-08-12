@@ -1,10 +1,12 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 const MenuBar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
+  const navigate = useNavigate();
 
   return (
     <div className="w-full relative overflow-hidden">
@@ -76,11 +78,41 @@ const MenuBar = () => {
               >
                 ✕
               </button>
-              <p>Inicio</p>
-              <p>Plantas</p>
-              <p>Macetas</p>
-              <p>Contacto</p>
-              <p>Jardin digital</p>
+              <p
+                onClick={() => {
+                  navigate("/"), setIsOpen(false);
+                }}
+              >
+                Inicio
+              </p>
+              <p
+                onClick={() => {
+                  navigate("/plantas"), setIsOpen(false);
+                }}
+              >
+                Plantas
+              </p>
+              <p
+                onClick={() => {
+                  navigate("/Macetas"), setIsOpen(false);
+                }}
+              >
+                Macetas
+              </p>
+              <p
+                onClick={() => {
+                  navigate("/Contacto"), setIsOpen(false);
+                }}
+              >
+                Contacto
+              </p>
+              <p
+                onClick={() => {
+                  navigate("/JardinDigital"), setIsOpen(false);
+                }}
+              >
+                Jardin digital
+              </p>
               <div className="w-[40%] rounded-bl-full !mt-6">
                 <img
                   src="https://res.cloudinary.com/dso8cvvoe/image/upload/v1754770903/ocote_ncuinj.png"
