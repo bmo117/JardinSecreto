@@ -8,6 +8,7 @@ import VerticalImageComparison from "../componets/VerticalComparer";
 import AnimatedTextV2 from "../componets/AnimatedTextV2";
 import ContactInfo from "../componets/Contact";
 import PlantCard from "../componets/PlantCard";
+import Gallery from "../componets/Gallery";
 
 import { usePlantHook } from "./plantsHook";
 
@@ -154,6 +155,22 @@ const Home = () => {
             className="w-[80%] !rounded-lg"
             src="https://res.cloudinary.com/dso8cvvoe/image/upload/v1752449772/Screenshot_2025-07-13_174507_vn6ibj.png"
             alt=""
+          />
+        </div>
+        <AnimatedTextV2 title={"!Galeria!"} body={""} />
+
+        <Gallery />
+
+        <div className="w-full flex items-center justify-center !rounded-lg !mt-14 ">
+          <VerticalImageComparison
+            before={
+              "https://res.cloudinary.com/dso8cvvoe/image/upload/v1754972745/WhatsApp_Image_2025-08-10_at_17.54.56_5_tndqzd.jpg"
+            }
+            after={
+              "https://res.cloudinary.com/dso8cvvoe/image/upload/v1754972749/WhatsApp_Image_2025-08-10_at_17.54.53_1_j1svkw.jpg"
+            }
+            altBefore={"Antes"}
+            altAfter={"Despues"}
           />
         </div>
 

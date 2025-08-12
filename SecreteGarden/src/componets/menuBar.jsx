@@ -94,17 +94,17 @@ const MenuBar = () => {
               </p>
               <p
                 onClick={() => {
-                  navigate("/Macetas"), setIsOpen(false);
-                }}
-              >
-                Macetas
-              </p>
-              <p
-                onClick={() => {
                   navigate("/Contacto"), setIsOpen(false);
                 }}
               >
                 Contacto
+              </p>
+              <p
+                onClick={() => {
+                  navigate("/Macetas"), setIsOpen(false);
+                }}
+              >
+                Decoracion
               </p>
               <p
                 onClick={() => {
