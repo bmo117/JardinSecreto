@@ -63,9 +63,9 @@ const PlantCard = ({
       } w-[29%]  md:h-80 bg-white/30 !backdrop-blur-md border border-white/30 rounded-lg shadow-md  relative overflow-visible !p-2 !mb-12`}
     >
       <div
-        className={` w-[85%] h-[60%] absolute -top-10 left-1/2 transform -translate-x-1/2 z-10`}
+        className={` w-[85%] h-[50%] absolute -top-10 left-1/2 transform -translate-x-1/2 z-10`}
       >
-        <img src={image} alt={title} className="w-full rounded-lg" />
+        <img src={image} alt={title} className="w-full rounded-lg h-[50%]" />
       </div>
 
       {/* <h2 className="text-lg font-bold text-center !mt-16 font-primary">

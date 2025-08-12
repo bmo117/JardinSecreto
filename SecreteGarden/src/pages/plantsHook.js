@@ -15,7 +15,7 @@ export const usePlantHook = () => {
       nameSpanish: "Ciprés italiano",
       scientificName: "",
       imageUrl:
-        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1753411458/italiancipress_wlnhc3.png",
+        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1754962687/italianCedar_msitci.png",
       desc: "",
       tipo: ["Árboles grandes", "Exterior"],
       luzRequerida: ["Sol directo"],
@@ -29,7 +29,7 @@ export const usePlantHook = () => {
       nameSpanish: "Cedro limón en espiral",
       scientificName: "",
       imageUrl:
-        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1753411504/cedrolimon_my37wt.png",
+        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1754963032/lemoncedar_xwbq9y.png",
       desc: "",
       tipo: ["Árboles grandes", "Exterior"],
       luzRequerida: ["Sol directo", "Sombra parcial"],
@@ -43,7 +43,7 @@ export const usePlantHook = () => {
       nameSpanish: "Liquidambar",
       scientificName: "",
       imageUrl:
-        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1753411537/sweetgum_j9husk.png",
+        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1754963262/Sweetgumv2_vew7ta.png",
       desc: "",
       tipo: ["Árboles grandes", "Exterior"],
       luzRequerida: ["Sol directo"],
@@ -57,7 +57,7 @@ export const usePlantHook = () => {
       nameSpanish: "Maxi Martinel",
       scientificName: "",
       imageUrl:
-        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1753411681/pinomaxziazul_uvmgeg.png",
+        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1754963612/maximartinelv3_ioujox.png",
       desc: "",
       tipo: ["Árboles medianos", "Exterior"],
       luzRequerida: ["Sol directo"],
@@ -71,7 +71,7 @@ export const usePlantHook = () => {
       nameSpanish: "Dólar",
       scientificName: "",
       imageUrl:
-        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1753411748/dollar_c6qjlm.png",
+        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1754963811/dollartreev3_chuaqh.png",
       desc: "",
       tipo: ["Árboles medianos", "Exterior"],
       luzRequerida: ["Sol directo", "Sombra parcial"],
@@ -85,7 +85,7 @@ export const usePlantHook = () => {
       nameSpanish: "Eucalipto",
       scientificName: "",
       imageUrl:
-        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1753411768/eucalipto_coxdpm.png",
+        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1754964111/Eucalyptusv3_rpajll.png",
       desc: "",
       tipo: ["Árboles grandes", "Exterior"],
       luzRequerida: ["Sol directo"],
@@ -99,7 +99,7 @@ export const usePlantHook = () => {
       nameSpanish: "Oyamel",
       scientificName: "",
       imageUrl:
-        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1754770021/oyamel_in3yzh.png",
+        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1754964554/oyamelv4_weikga.png",
       desc: "",
       tipo: ["Árboles grandes", "Exterior"],
       luzRequerida: ["Sombra parcial"],
@@ -113,7 +113,7 @@ export const usePlantHook = () => {
       nameSpanish: "Acacia morada",
       scientificName: "",
       imageUrl:
-        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1754770285/acaciomorada_hkx65b.png",
+        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1754965981/acaciomoradav4_vwyupy.png",
       desc: "",
       tipo: ["Árboles medianos", "Exterior"],
       luzRequerida: ["Sol directo"],
@@ -127,7 +127,7 @@ export const usePlantHook = () => {
       nameSpanish: "Araucarias",
       scientificName: "",
       imageUrl:
-        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1754770375/araucaria_qpjvgk.png",
+        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1754966924/Leonardo_Vision_XL_A_minimalistic_flat_image_of_a_plant_called_0_1_uu3xea.png",
       desc: "",
       tipo: ["Árboles grandes", "Exterior"],
       luzRequerida: ["Sol directo", "Sombra parcial"],
@@ -141,7 +141,7 @@ export const usePlantHook = () => {
       nameSpanish: "Cedro blanco",
       scientificName: "",
       imageUrl:
-        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1754770552/cedroblancov2_dc1q8o.png",
+        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1754968689/cedroblancov4_qhnhwm.png",
       desc: "",
       tipo: ["Árboles grandes", "Exterior"],
       luzRequerida: ["Sol directo"],
