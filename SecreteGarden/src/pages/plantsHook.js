@@ -155,7 +155,7 @@ export const usePlantHook = () => {
       nameSpanish: "Oro viejo",
       scientificName: "",
       imageUrl:
-        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1754770711/oroviejo_h5u3yj.png",
+        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755056693/oroviejov5_pn1jhw.png",
       desc: "",
       tipo: ["Árboles medianos", "Exterior"],
       luzRequerida: ["Sol directo"],
@@ -169,7 +169,7 @@ export const usePlantHook = () => {
       nameSpanish: "Ocote",
       scientificName: "",
       imageUrl:
-        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1754770903/ocote_ncuinj.png",
+        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755057064/ocotev4_ydgmbu.png",
       desc: "",
       tipo: ["Árboles grandes", "Exterior"],
       luzRequerida: ["Sol directo"],
@@ -183,7 +183,7 @@ export const usePlantHook = () => {
       nameSpanish: "Yumipero rastrero",
       scientificName: "",
       imageUrl:
-        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1754771051/crawlincipres_s3pyy4.png",
+        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755057498/yuniperorastrerov5_ju8b5d.png",
       desc: "",
       tipo: ["Exterior"],
       luzRequerida: ["Sol directo", "Sombra parcial"],
@@ -197,7 +197,7 @@ export const usePlantHook = () => {
       nameSpanish: "Árboles bonsai",
       scientificName: "",
       imageUrl:
-        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1754771319/bonsai_b3semn.png",
+        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755061792/Leonardo_Vision_XL_A_minimalistic_flat_image_of_a_plant_called_0_3_qmaquv.png",
       desc: "",
       tipo: ["Interior", "Exterior"],
       luzRequerida: ["Sol directo", "Sombra parcial", "Interior con poca luz"],
@@ -211,7 +211,7 @@ export const usePlantHook = () => {
       nameSpanish: "Tuliá",
       scientificName: "",
       imageUrl:
-        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1754771592/tuliav2_ilp9c2.png",
+        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755062500/tuliav4_rvyoqa.png",
       desc: "",
       tipo: ["Exterior"],
       luzRequerida: ["Sol directo"],
@@ -225,7 +225,7 @@ export const usePlantHook = () => {
       nameSpanish: "Cedrela",
       scientificName: "",
       imageUrl:
-        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1754771575/cedrela_pcztnm.png",
+        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755062829/cedrelav4_jb84ws.png",
       desc: "",
       tipo: ["Árboles pequeños", "Exterior"],
       luzRequerida: ["Sol directo"],
@@ -239,7 +239,7 @@ export const usePlantHook = () => {
       nameSpanish: "Cedro limón",
       scientificName: "",
       imageUrl:
-        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1754771647/lemon_cedar_xwbndp.png",
+        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755064195/lemontreev4_zgas0h.png",
       desc: "",
       tipo: ["Árboles pequeños", "Exterior"],
       luzRequerida: ["Sol directo"],
@@ -253,7 +253,7 @@ export const usePlantHook = () => {
       nameSpanish: "Jacarandá",
       scientificName: "",
       imageUrl:
-        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1754771737/jacaranda_qpu5ze.png",
+        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755064330/Leonardo_Vision_XL_A_minimalistic_flat_image_of_a_plant_called_0_4_oddujt.png",
       desc: "",
       tipo: ["Árboles pequeños", "Exterior"],
       luzRequerida: ["Sol directo"],
@@ -267,7 +267,7 @@ export const usePlantHook = () => {
       nameSpanish: "Ficus",
       scientificName: "",
       imageUrl:
-        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1754771822/ficusv2_ifecin.png",
+        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755064535/Leonardo_Vision_XL_A_minimalistic_flat_image_of_a_plant_called_1_locl3i.png",
       desc: "",
       tipo: ["Interior", "Exterior"],
       luzRequerida: ["Sombra parcial", "Interior con poca luz"],
@@ -281,7 +281,7 @@ export const usePlantHook = () => {
       nameSpanish: "Coco plumoso",
       scientificName: "",
       imageUrl:
-        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1754771942/cocoplumosochico_fdiwyh.png",
+        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755064674/Leonardo_Vision_XL_A_minimalistic_flat_image_of_a_plant_called_1_1_effkt6.png",
       desc: "",
       tipo: ["Exterior"],
       luzRequerida: ["Sol directo"],
@@ -295,7 +295,7 @@ export const usePlantHook = () => {
       nameSpanish: "Coco plumoso grande",
       scientificName: "",
       imageUrl:
-        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1754772128/COCOPLUMOSOgrande_vmxqpv.png",
+        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755065165/Leonardo_Vision_XL_A_minimalistic_flat_image_of_a_plant_called_0_5_on4ilr.png",
       desc: "",
       tipo: ["Exterior"],
       luzRequerida: ["Sol directo"],
