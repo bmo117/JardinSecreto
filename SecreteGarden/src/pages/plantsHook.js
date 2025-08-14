@@ -309,7 +309,7 @@ export const usePlantHook = () => {
       nameSpanish: "Abanico",
       scientificName: "",
       imageUrl:
-        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1754772172/abanico_xbn1oc.png",
+        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755144506/Leonardo_Vision_XL_A_minimalistic_flat_image_of_a_plant_called_0_10_rpg48l.png",
       desc: "",
       tipo: ["Exterior"],
       luzRequerida: ["Sol directo"],
@@ -323,7 +323,7 @@ export const usePlantHook = () => {
       nameSpanish: "Rubelina",
       scientificName: "",
       imageUrl:
-        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1754772240/rubelina_wmhxzp.png",
+        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755143973/Leonardo_Vision_XL_A_minimalistic_flat_image_of_a_plant_called_1_2_vssbn3.png",
       desc: "",
       tipo: ["Exterior"],
       luzRequerida: ["Sol directo"],
@@ -337,7 +337,7 @@ export const usePlantHook = () => {
       nameSpanish: "Zica",
       scientificName: "",
       imageUrl:
-        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1754772287/cica_ksv7gx.png",
+        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755144185/Leonardo_Vision_XL_A_minimalistic_flat_image_of_a_plant_called_0_9_e5hybc.png",
       desc: "",
       tipo: ["Exterior"],
       luzRequerida: ["Sol directo"],
@@ -351,7 +351,7 @@ export const usePlantHook = () => {
       nameSpanish: "Licua",
       scientificName: "",
       imageUrl:
-        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1754772355/licuala_miqq44.png",
+        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755143771/Leonardo_Vision_XL_A_minimalistic_flat_image_of_a_plant_called_0_7_joxvdt.png",
       desc: "",
       tipo: ["Exterior"],
       luzRequerida: ["Sol directo", "Sombra parcial"],
@@ -365,7 +365,7 @@ export const usePlantHook = () => {
       nameSpanish: "Maranta sapito",
       scientificName: "",
       imageUrl:
-        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1754772418/sapito_xnriii.png",
+        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755144772/Leonardo_Vision_XL_A_minimalistic_flat_image_of_a_plant_called_0_11_lr0ebg.png",
       desc: "",
       tipo: ["Interior"],
       luzRequerida: [
@@ -382,7 +382,7 @@ export const usePlantHook = () => {
       nameSpanish: "Peperomia clusifolia",
       scientificName: "",
       imageUrl:
-        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1754772570/Peperomia_clusifolia_rcko2n.png",
+        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755145750/Leonardo_Vision_XL_A_minimalistic_flat_image_of_a_plant_called_1_4_vtfmue.png",
       desc: "",
       tipo: ["Interior"],
       luzRequerida: [
@@ -399,7 +399,7 @@ export const usePlantHook = () => {
       nameSpanish: "Peperomia magnolifolia",
       scientificName: "",
       imageUrl:
-        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1754772616/Peperomia_magnolifolia_a0pyvv.png",
+        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755146664/Leonardo_Vision_XL_A_minimalistic_flat_image_of_a_plant_called_0_12_pqp3ez.png",
       desc: "",
       tipo: ["Interior"],
       luzRequerida: [
@@ -430,7 +430,7 @@ export const usePlantHook = () => {
       nameSpanish: "Caladium",
       scientificName: "",
       imageUrl:
-        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1754772756/Caladium_pgvjmr.png",
+        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755146950/Leonardo_Vision_XL_A_minimalistic_flat_image_of_a_plant_called_1_5_bckvsd.png",
       desc: "",
       tipo: ["Interior"],
       luzRequerida: ["Sombra parcial", "Interior con luz brillante indirecta"],
@@ -444,7 +444,7 @@ export const usePlantHook = () => {
       nameSpanish: "Maranta",
       scientificName: "",
       imageUrl:
-        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1754774047/Maranta_equ4xb.png",
+        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755147878/Leonardo_Vision_XL_A_minimalistic_flat_image_of_a_plant_called_1_6_feqgey.png",
       desc: "",
       tipo: ["Interior"],
       luzRequerida: [
@@ -461,7 +461,7 @@ export const usePlantHook = () => {
       nameSpanish: "Millonaria",
       scientificName: "",
       imageUrl:
-        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1754774106/Millonaria_t6hbha.png",
+        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755148041/Leonardo_Vision_XL_A_minimalistic_flat_image_of_a_plant_called_0_13_sm0bqg.png",
       desc: "",
       tipo: ["Exterior", "Interior"],
       luzRequerida: ["Sol directo", "Sombra parcial"],
@@ -475,7 +475,7 @@ export const usePlantHook = () => {
       nameSpanish: "Copal/incienso",
       scientificName: "",
       imageUrl:
-        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1754774178/Copalincienso_h5jfuj.png",
+        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755148486/Leonardo_Vision_XL_A_minimalistic_flat_image_of_a_plant_called_0_15_nagkuo.png",
       desc: "",
       tipo: ["Exterior"],
       luzRequerida: ["Sol directo"],
@@ -489,7 +489,7 @@ export const usePlantHook = () => {
       nameSpanish: "Colisadra verde",
       scientificName: "",
       imageUrl:
-        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1754774250/Colisadra_verde_epfm18.png",
+        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755148866/Leonardo_Vision_XL_A_minimalistic_flat_image_of_a_plant_called_1_7_gzboji.png",
       desc: "",
       tipo: ["Interior", "Exterior"],
       luzRequerida: ["Sombra parcial", "Interior con luz brillante indirecta"],
@@ -503,7 +503,7 @@ export const usePlantHook = () => {
       nameSpanish: "Hoja plateada",
       scientificName: "",
       imageUrl:
-        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1754774327/ojaplateadv2_uzd93p.png",
+        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755149520/Leonardo_Vision_XL_A_minimalistic_flat_image_of_a_plant_called_1_9_wnpp8g.png",
       desc: "",
       tipo: ["Interior"],
       luzRequerida: ["Sombra parcial", "Interior con poca luz"],
@@ -517,7 +517,7 @@ export const usePlantHook = () => {
       nameSpanish: "Hiedra azul",
       scientificName: "",
       imageUrl:
-        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1754774385/Hiedra_azul_xy6peh.png",
+        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755149728/Leonardo_Vision_XL_A_minimalistic_flat_image_of_a_plant_called_1_10_jnmefu.png",
       desc: "",
       tipo: ["Interior", "Exterior"],
       luzRequerida: ["Sombra parcial", "Sol directo"],
@@ -531,7 +531,7 @@ export const usePlantHook = () => {
       nameSpanish: "Colisadra",
       scientificName: "",
       imageUrl:
-        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1754774422/Colisadra_u4qggo.png",
+        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755149143/Leonardo_Vision_XL_A_minimalistic_flat_image_of_a_plant_called_1_8_p0wc5c.png",
       desc: "",
       tipo: ["Interior"],
       luzRequerida: [
@@ -548,7 +548,7 @@ export const usePlantHook = () => {
       nameSpanish: "Zapatilla",
       scientificName: "",
       imageUrl:
-        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1754774489/Filodendro_Zapatilla_w0py16.png",
+        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755149917/Leonardo_Vision_XL_A_minimalistic_flat_image_of_a_plant_called_0_16_ndm8un.png",
       desc: "",
       tipo: ["Interior"],
       luzRequerida: [
@@ -565,7 +565,7 @@ export const usePlantHook = () => {
       nameSpanish: "Payasito",
       scientificName: "",
       imageUrl:
-        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1754774541/Payasito_y9djso.png",
+        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755150546/Leonardo_Vision_XL_A_minimalistic_flat_image_of_a_plant_called_1_11_jaqqni.png",
       desc: "",
       tipo: ["Interior"],
       luzRequerida: ["Interior con poca luz"],
@@ -579,7 +579,7 @@ export const usePlantHook = () => {
       nameSpanish: "Cortina",
       scientificName: "Chlorophytum comosum",
       imageUrl:
-        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1754775443/AlbedoBase_XL_A_minimalistic_2D_flat_illustration_of_a_plant_c_0_3_pp9bn6.png",
+        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755150715/Leonardo_Vision_XL_A_minimalistic_flat_image_of_a_plant_called_0_17_llgxgx.png",
       desc: "",
       tipo: ["Interior", "Arbustos"],
       luzRequerida: ["Interior con luz brillante indirecta"],
@@ -623,7 +623,8 @@ export const usePlantHook = () => {
       name: "Tuberose",
       nameSpanish: "Tuberosa",
       scientificName: "Polianthes tuberosa",
-      imageUrl: "",
+      imageUrl:
+        "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755150907/Leonardo_Vision_XL_A_minimalistic_flat_image_of_a_plant_called_1_12_ffou2z.png",
       desc: "",
       tipo: ["Exterior", "Flores"],
       luzRequerida: ["Sol directo"],
