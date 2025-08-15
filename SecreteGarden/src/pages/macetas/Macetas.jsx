@@ -71,7 +71,7 @@ const Macetas = () => {
   return (
     <div className="w-full h-fit !min-h-screen bg-primary overflow-hidden flex flex-col items-center justify-center p-4">
       <MenuBar />
-      <div className={`  ${categoriaSeleccionada ? "" : "!mt-[12%]"}`}>
+      <div className={`  ${categoriaSeleccionada ? "!mt-[32%]" : "!mt-[12%]"}`}>
         {!categoriaSeleccionada && (
           <AnimatedText
             title={"Decoracion"}
@@ -98,7 +98,9 @@ const Macetas = () => {
                     setCategoriaSeleccionada(cat);
                     setSubIndex(0);
                   }}
-                  className={`relative w-full h-50 rounded-xl shadow-lg cursor-pointer overflow-hidden  !shadow-[0_10px_60px_-10px_rgba(0,0,0,0.5)] `}
+                  className={`relative w-full h-50 rounded-xl shadow-lg cursor-pointer overflow-hidden  !shadow-[0_10px_60px_-10px_rgba(0,0,0,0.5)]  ${
+                    categoriaSeleccionada ? "!mt-[32%]" : ""
+                  }`}
                 >
                   {/* Imagen de fondo */}
                   <img
@@ -148,17 +150,21 @@ const Macetas = () => {
 
           {/* Botón para volver al menú */}
           <button
-            className="absolute bottom-[-60px] px-4 py-2 bg-white text-black rounded-lg shadow"
+            className="absolute bottom-[-60px] !px-4 !py-2 !bg-secondary text-black !rounded-lg shadow"
             onClick={() => setCategoriaSeleccionada(null)}
           >
-            Volver
+            Regresar
           </button>
         </div>
       )}
 
       <br />
 
-      <div className="w-full h-50 bg-secondary flex items-center !px-6">
+      <div
+        className={`w-full h-50 bg-secondary flex items-center !px-6 ${
+          categoriaSeleccionada ? "!mt-[32%]" : ""
+        }`}
+      >
         {/* Izquierda: datos de contacto y ubicación */}
         <div className="flex items-center">
           <div className="w-1/2  font-primary space-y-1 text-sm">
