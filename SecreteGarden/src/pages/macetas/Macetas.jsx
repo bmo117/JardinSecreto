@@ -69,9 +69,9 @@ const Macetas = () => {
   };
 
   return (
-    <div className="w-full h-screen bg-primary overflow-hidden flex flex-col items-center justify-center p-4">
+    <div className="w-full h-fit !min-h-screen bg-primary overflow-hidden flex flex-col items-center justify-center p-4">
       <MenuBar />
-      <div className={`  ${categoriaSeleccionada ? "" : "!mt-30"}`}>
+      <div className={`  ${categoriaSeleccionada ? "" : "!mt-[12%]"}`}>
         {!categoriaSeleccionada && (
           <AnimatedText
             title={"Decoracion"}
@@ -155,6 +155,36 @@ const Macetas = () => {
           </button>
         </div>
       )}
+
+      <br />
+
+      <div className="w-full h-50 bg-secondary flex items-center !px-6">
+        {/* Izquierda: datos de contacto y ubicación */}
+        <div className="flex items-center">
+          <div className="w-1/2  font-primary space-y-1 text-sm">
+            <p>Contacto: 729 138 3936</p>
+            <p>
+              Ubicación: Carretera, Al Centro Ceremonial Otomí N°2, Temoaya,
+              Méx.
+            </p>
+          </div>
+
+          {/* Derecha: perrito, nombre y texto de derechos */}
+          <div className="w-1/2 flex flex-col items-center justify-center  font-primary  ">
+            <img
+              src="https://res.cloudinary.com/dso8cvvoe/image/upload/v1752457522/ufo_a887re.png"
+              alt="Perrito Rex"
+              className="w-16 h-16 mb-1"
+            />
+            <p className="text-lg font-semibold">Rex</p>
+          </div>
+        </div>
+      </div>
+      <div className="w-full flex items-center justify-center font-primary bg-secondary   !pb-16">
+        <p className="text-sm mt-2">
+          © BMO Industries. Todos los derechos reservados.
+        </p>
+      </div>
     </div>
   );
 };
