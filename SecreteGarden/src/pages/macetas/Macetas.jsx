@@ -172,7 +172,7 @@ const Macetas = () => {
 
               <motion.div
                 key={card.id}
-                className={`absolute top-0 left-0 w-full h-[86%] rounded-xl shadow-lg overflow-hidden ${
+                className={`absolute top-0 left-0 w-full h-[100%] rounded-xl shadow-lg overflow-hidden ${
                   card.color
                 } flex items-end justify-center text-white text-2xl  ${
                   i % 2 === 0 ? "rotate-0" : "-rotate-6"
