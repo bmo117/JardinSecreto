@@ -13,7 +13,7 @@ import AnimatedText from "../../componets/AnimatedText";
 //   );
 // };
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const categorias = [
@@ -83,6 +83,23 @@ const Macetas = () => {
       setSubIndex(subIndex - 1);
     }
   };
+
+  useEffect(() => {
+    if (categoriaSeleccionada) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [categoriaSeleccionada]);
+
+  useEffect(() => {
+    if (categoriaSeleccionada) {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth", // si quieres animado; usa "auto" si quieres instantáneo
+      });
+    }
+  }, [categoriaSeleccionada]);
 
   return (
     <div className="w-full h-fit !min-h-screen !bg-gray-50 overflow-hidden flex flex-col items-center justify-center p-4">
@@ -205,8 +222,10 @@ const Macetas = () => {
           </AnimatePresence>
 
           {/* Botón para volver al menú */}
+          <br />
+          <br />
           <button
-            className="absolute bottom-[-60px] !px-4 !py-2 !bg-secondary text-black !rounded-lg shadow"
+            className="absolute bottom-[-100px] !px-4 !py-2 !bg-secondary text-black !rounded-lg shadow !mt-6"
             onClick={() => setCategoriaSeleccionada(null)}
           >
             Regresar
