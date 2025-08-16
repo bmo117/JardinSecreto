@@ -22,8 +22,24 @@ const categorias = [
     titulo: "Arreglos",
     color: "bg-blue-400",
     subcards: [
-      { id: 1, titulo: "Arreglo 1", color: "bg-purple-400" },
-      { id: 2, titulo: "Arreglo 2", color: "bg-indigo-400" },
+      {
+        id: 1,
+        titulo: "Arreglo doble",
+        color: "bg-purple-400",
+        img: "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755308525/arreglo20_1_ozmhgu.jpg",
+      },
+      {
+        id: 2,
+        titulo: "Arreglo doble",
+        color: "bg-indigo-400",
+        img: "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755309236/arreglo2_1_fg3m9m.jpg",
+      },
+      {
+        id: 3,
+        titulo: "Adorno cajita",
+        color: "bg-indigo-400",
+        img: "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755309487/arreglo3_1_vhxha5.jpg",
+      },
     ],
     imagen:
       "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755065687/arreglo1_v00mlp.jpg",
@@ -69,7 +85,7 @@ const Macetas = () => {
   };
 
   return (
-    <div className="w-full h-fit !min-h-screen bg-primary overflow-hidden flex flex-col items-center justify-center p-4">
+    <div className="w-full h-fit !min-h-screen !bg-gray-50 overflow-hidden flex flex-col items-center justify-center p-4">
       <MenuBar />
       <div className={`  ${categoriaSeleccionada ? "!mt-[32%]" : "!mt-[12%]"}`}>
         {!categoriaSeleccionada && (
@@ -87,7 +103,7 @@ const Macetas = () => {
         <div
           className={` ${
             categoriaSeleccionada ? "hidden" : ""
-          } w-[90%] !p-5 !bg-white/35 !backdrop-blur-md !border !border-white/30 rounded-xl !h-fit`}
+          } w-[90%] !p-5 !bg-gray-50 !backdrop-blur-md !border !border-white/30 rounded-xl !h-fit`}
         >
           {!categoriaSeleccionada && (
             <div className="grid grid-cols-1 gap-4 w-full max-w-sm ">
@@ -113,7 +129,7 @@ const Macetas = () => {
                   <div className="absolute bottom-0 left-0 w-full h-20 bg-gradient-to-t from-black/70 to-transparent"></div>
 
                   {/* Título sobre el degradado */}
-                  <div className="absolute bottom-3 left-0 w-full text-center text-white text-2xl font-bold">
+                  <div className="absolute bottom-3 left-0 w-full text-center text-white text-2xl !font-primary">
                     {cat.titulo}
                   </div>
                 </div>
@@ -128,22 +144,62 @@ const Macetas = () => {
         <div className="relative w-64 h-96 flex items-center justify-center">
           <AnimatePresence>
             {categoriaSeleccionada.subcards.slice(subIndex).map((card, i) => (
+              //   <motion.div
+              //     key={card.id}
+              //     className={`absolute top-0 left-0 w-full h-full rounded-xl shadow-lg ${
+              //       card.color
+              //     } flex items-center justify-center text-white text-2xl font-bold ${
+              //       i % 2 === 0 ? "rotate-0" : "-rotate-6"
+              //     }`}
+              //     style={{
+              //       transform: `scale(${1 - i * 0.05}) translateY(${i * 10}px)`,
+              //       zIndex: categoriaSeleccionada.subcards.length - i,
+              //     }}
+              //     initial={{ opacity: 0, y: 50 }}
+              //     animate={{ opacity: 1, y: 0 }}
+              //     exit={{ opacity: 0, scale: 0.8 }}
+              //     transition={{ duration: 0.3 }}
+              //     drag="x"
+              //     dragConstraints={{ left: 0, right: 0 }}
+              //     onDragEnd={handleDragEnd}
+              //   >
+              //     <img
+              //       src="https://res.cloudinary.com/dso8cvvoe/image/upload/v1755308525/arreglo20_1_ozmhgu.jpg"
+              //       alt=""
+              //     />
+              //     {card.titulo}
+              //   </motion.div>
+
               <motion.div
                 key={card.id}
-                className={`absolute top-0 left-0 w-full h-full rounded-xl shadow-lg ${card.color} flex items-center justify-center text-white text-2xl font-bold`}
+                className={`absolute top-0 left-0 w-full h-[86%] rounded-xl shadow-lg overflow-hidden ${
+                  card.color
+                } flex items-end justify-center text-white text-2xl  ${
+                  i % 2 === 0 ? "rotate-0" : "-rotate-6"
+                }`}
                 style={{
-                  transform: `scale(${1 - i * 0.05}) translateY(${i * 10}px)`,
+                  transform: `scale(${1 - i * 0.5}) translateY(${i * 10}px)`,
                   zIndex: categoriaSeleccionada.subcards.length - i,
                 }}
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, scale: 0.8 }}
-                transition={{ duration: 0.3 }}
+                transition={{ duration: 0.5 }}
                 drag="x"
                 dragConstraints={{ left: 0, right: 0 }}
                 onDragEnd={handleDragEnd}
               >
-                {card.titulo}
+                {/* Imagen como fondo ocupando todo */}
+                <img
+                  src={card.img}
+                  alt=""
+                  className="absolute !inset-0 !w-full !h-full !object-cover"
+                />
+
+                {/* Texto en la parte inferior */}
+                <div className="relative w-full text-center bg-black/20 !py-2 font-primary ">
+                  {card.titulo}
+                </div>
               </motion.div>
             ))}
           </AnimatePresence>
