@@ -277,25 +277,438 @@ const categorias = [
     titulo: "Macetas",
     color: "bg-white",
     subcards: [
-      { id: 1, titulo: "Maceta 1", color: "bg-white", desc: "desc" },
-      { id: 2, titulo: "Maceta 2", color: "bg-white" },
-      { id: 3, titulo: "Maceta 3", color: "bg-white" },
+      {
+        id: 1,
+        titulo: "Maceta cónica",
+        color: "bg-white",
+        desc: "Craquelada de barro mediano-chico",
+        img: "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755437480/maseta2_1_xhq5b8.jpg",
+      },
+      {
+        id: 2,
+        titulo: "Maceta",
+        color: "bg-white",
+        desc: "Tipo cubeta de barro mediano-chico",
+        img: "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755436968/maseta3_2_pys0vj.jpg",
+      },
+      {
+        id: 3,
+        titulo: "Maceta cónica",
+        color: "bg-white",
+        desc: "De barro grande",
+        img: "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755436973/maseta4_1_xxdv4g.jpg",
+      },
+      {
+        id: 4,
+        titulo: "Maceta",
+        color: "bg-white",
+        desc: "De boca ancha de barro grande",
+        img: "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755436978/maseta5_1_r5hwwq.jpg",
+      },
+      {
+        id: 5,
+        titulo: "Maceta",
+        color: "bg-white",
+        desc: "De boca ancha de barro grande",
+        img: "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755437859/maseta11_1_zdum2l.jpg",
+      },
+      {
+        id: 6,
+        titulo: "Maceta",
+        color: "bg-white",
+        desc: "Grabado de aguacate de barro grande",
+        img: "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755438620/maseta6_1_yljwzg.jpg",
+      },
+      {
+        id: 7,
+        titulo: "Maceta",
+        color: "bg-white",
+        desc: "Tipo pirámide de barro garnde",
+        img: "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755438646/maseta7_1_gkjed4.jpg",
+      },
+      {
+        id: 8,
+        titulo: "Maceta",
+        color: "bg-white",
+        desc: "Tipo cubeta de barro grande",
+        img: "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755438660/maseta8_1_aidmqz.jpg",
+      },
+      {
+        id: 9,
+        titulo: "Maceta",
+        color: "bg-white",
+        desc: "Tipo jardinera de barro garnde",
+        img: "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755438674/maseta9_1_aogomr.jpg",
+        wide: true,
+      },
+      {
+        id: 10,
+        titulo: "Maceta",
+        color: "bg-white",
+        desc: "Tipo prisma rectangular de barro grande",
+        img: "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755438691/maseta10_1_f3caoo.jpg",
+      },
+      {
+        id: 11,
+        titulo: "Maceta",
+        color: "bg-white",
+        desc: "Tipo aguacate liso de barro grande",
+        img: "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755467339/maseta11_2_y8owjt.jpg",
+      },
+      {
+        id: 12,
+        titulo: "Maceta",
+        color: "bg-white",
+        desc: "Tipo cónica de barro jumbo",
+        img: "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755467520/maseta12_1_ucnulv.jpg",
+      },
+      {
+        id: 13,
+        titulo: "Maceta",
+        color: "bg-white",
+        desc: "Tipo cilíndrica de barro jumbo",
+        img: "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755467540/maseta13_1_mknokf.jpg",
+      },
+      {
+        id: 14,
+        titulo: "Maceta",
+        color: "bg-white",
+        desc: "Tipo aguacate liso de barro mediano-grande",
+        img: "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755467555/maseta14_1_cgyyfk.jpg",
+      },
+      {
+        id: 15,
+        titulo: "Maceta",
+        color: "bg-white",
+        desc: "Tipo media naranja de barro grande",
+        img: "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755467569/maseta15_1_xydtmr.jpg",
+      },
+      {
+        id: 16,
+        titulo: "Maceta",
+        color: "bg-white",
+        desc: "Tipo esquinero de barro grande",
+        img: "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755467965/maseta16_1_xeaszm.jpg",
+      },
+      {
+        id: 17,
+        titulo: "Maceta",
+        color: "bg-white",
+        desc: "Tipo esfera de barro mediana-chica",
+        img: "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755467986/maseta17_1_xuw3fh.jpg",
+      },
+      {
+        id: 18,
+        titulo: "Maceta",
+        color: "bg-white",
+        desc: "Tipo cubeta Grande",
+        img: "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755468011/maseta18_1_rlxjln.jpg",
+      },
+      {
+        id: 19,
+        titulo: "Maceta",
+        color: "bg-white",
+        desc: "Tipo cilíndrica de barro mediano-grande",
+        img: "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755468039/maseta19_1_fra8nz.jpg",
+      },
+      {
+        id: 20,
+        titulo: "Maceta",
+        color: "bg-white",
+        desc: "Tipo campana mediano-grande",
+        img: "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755468059/maseta20_1_l4glfp.jpg",
+      },
+      {
+        id: 21,
+        titulo: "Macetero",
+        color: "bg-white",
+        desc: "De barro grande",
+        img: "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755468087/maseta21_1_apgi3z.jpg",
+      },
+      {
+        id: 22,
+        titulo: "Maceta",
+        color: "bg-white",
+        desc: "Tipo bonsaí de barro chica",
+        img: "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755469624/maseta22_1_paum4v.jpg",
+      },
+      {
+        id: 23,
+        titulo: "Maceta",
+        color: "bg-white",
+        desc: "Tipo cubeta de barro chica",
+        img: "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755469646/maseta23_1_bdeg1i.jpg",
+      },
+      {
+        id: 24,
+        titulo: "Maceta",
+        color: "bg-white",
+        desc: "Tipo cilíndrica de barro chica",
+        img: "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755469667/maseta24_1_lfdzfr.jpg",
+      },
+      {
+        id: 25,
+        titulo: "Maceta",
+        color: "bg-white",
+        desc: "Tipo cubo de barro chica",
+        img: "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755470690/maseta25_1_oq10tv.jpg",
+      },
+      {
+        id: 26,
+        titulo: "Maceta",
+        color: "bg-white",
+        desc: "Tipo esfera de barro chica",
+        img: "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755470668/maseta26_1_kvobcb.jpg",
+      },
+      {
+        id: 27,
+        titulo: "Maceta",
+        color: "bg-white",
+        desc: "Tipo semi-esferica chica",
+        img: "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755470650/maseta27_1_ffav9f.jpg",
+      },
+      {
+        id: 28,
+        titulo: "Maceta",
+        color: "bg-white",
+        desc: "Tipo semi-cilíndrica de barro chica",
+        img: "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755470623/maseta28_1_ri5ruv.jpg",
+      },
+      {
+        id: 29,
+        titulo: "Maceta",
+        color: "bg-white",
+        desc: "Tipo media naranja de barro chica",
+        img: "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755470607/maseta29_1_uonvud.jpg",
+      },
+      {
+        id: 30,
+        titulo: "Maceta",
+        color: "bg-white",
+        desc: "Tipo esférica de barro chica",
+        img: "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755470591/maseta30_1_rqqp9m.jpg",
+      },
+      {
+        id: 31,
+        titulo: "Maceta",
+        color: "bg-white",
+        desc: "Tipo cubeta estilo rústico de barro mediano-grande",
+        img: "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755470563/maseta31_1_vvjhes.jpg",
+      },
+      {
+        id: 32,
+        titulo: "Maceta",
+        color: "bg-white",
+        desc: "De cerámica mediano-chico",
+        img: "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755470541/maseta32_1_x1rjtu.jpg",
+      },
+      {
+        id: 33,
+        titulo: "Maceta",
+        color: "bg-white",
+        desc: "De cerámica dona mini",
+        img: "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755470515/maseta33_2_epg98t.jpg",
+      },
+      {
+        id: 34,
+        titulo: "Maceta",
+        color: "bg-white",
+        desc: "TDe cerámica cilíndro mini",
+        img: "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755470501/maseta34_2_qfsnja.jpg",
+      },
+      {
+        id: 35,
+        titulo: "Maceta",
+        color: "bg-white",
+        desc: "De cerámica figura chica",
+        img: "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755470476/maseta35_1_gxndqm.jpg",
+      },
+      {
+        id: 36,
+        titulo: "Maceta",
+        color: "bg-white",
+        desc: "De cerámica figura chica",
+        img: "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755470451/maseta36_1_mcfxn3.jpg",
+      },
+      {
+        id: 37,
+        titulo: "Maceta",
+        color: "bg-white",
+        desc: "De cerámica figura chica",
+        img: "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755470424/maseta37_1_x8unjp.jpg",
+      },
+      {
+        id: 38,
+        titulo: "Maceta",
+        color: "bg-white",
+        desc: "De cerámica figura chica",
+        img: "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755470405/maseta38_1_z3miyy.jpg",
+      },
+      {
+        id: 39,
+        titulo: "Maceta",
+        color: "bg-white",
+        desc: "De cerámica figura chica",
+        img: "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755470391/maseta39_1_wajlga.jpg",
+      },
+      {
+        id: 40,
+        titulo: "Maceta",
+        color: "bg-white",
+        desc: "De barro figura chica",
+        img: "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755470377/maseta40_1_hpyenf.jpg",
+      },
+      {
+        id: 41,
+        titulo: "Maceta",
+        color: "bg-white",
+        desc: "De barro figura chica",
+        img: "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755575705/maseta41_1_wj5tkv.jpg",
+      },
+      {
+        id: 42,
+        titulo: "Maceta",
+        color: "bg-white",
+        desc: "De barro figura chica",
+        img: "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755575689/maseta42_1_uq0mmo.jpg",
+      },
+      {
+        id: 43,
+        titulo: "Maceta",
+        color: "bg-white",
+        desc: "De barro figura chica",
+        img: "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755575672/maseta43_1_njgpfv.jpg",
+      },
+      {
+        id: 44,
+        titulo: "Maceta",
+        color: "bg-white",
+        desc: "De barro figura chica",
+        img: "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755471355/maseta44_1_imzp57.jpg",
+      },
+      {
+        id: 45,
+        titulo: "Maceta",
+        color: "bg-white",
+        desc: "Tipo cubeta de barro chica",
+        img: "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755471332/maseta45_1_erdjzn.jpg",
+      },
+      {
+        id: 46,
+        titulo: "Maceta",
+        color: "bg-white",
+        desc: "Tipo cubeta de barro mediano-chico",
+        img: "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755471312/maseta46_1_bodskj.jpg",
+      },
+      {
+        id: 47,
+        titulo: "Maceta",
+        color: "bg-white",
+        desc: "Tipo jardinera picos de barro chico",
+        img: "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755471297/maseta47_1_h1vdbi.jpg",
+      },
+      {
+        id: 48,
+        titulo: "Maceta",
+        color: "bg-white",
+        desc: "Tipo jardinera de barro chica",
+        img: "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755471277/maseta48_1_cl0r0a.jpg",
+        wide: true,
+      },
+      {
+        id: 49,
+        titulo: "Maceta",
+        color: "bg-white",
+        desc: "Tipo campana de barro mediana-chica",
+        img: "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755471263/maseta49_1_mfn8mw.jpg",
+      },
+      {
+        id: 50,
+        titulo: "Maceta",
+        color: "bg-white",
+        desc: "Tipo cilíndrica de barro mediano-chico",
+        img: "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755471249/maseta50_1_i5fbbm.jpg",
+      },
+      {
+        id: 51,
+        titulo: "Maceta",
+        color: "bg-white",
+        desc: "Tipo jardinera de barro mini",
+        img: "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755576176/maseta51_1_pzmren.jpg",
+      },
+      {
+        id: 52,
+        titulo: "Maceta",
+        color: "bg-white",
+        desc: "Tipo estrella de barro mini",
+        img: "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755576196/maseta52_1_y2vpch.jpg",
+      },
+      {
+        id: 53,
+        titulo: "Maceta",
+        color: "bg-white",
+        desc: "Tipo cónica de barro mini",
+        img: "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755576220/maseta53_1_tve6l5.jpg",
+      },
+      {
+        id: 54,
+        titulo: "Maceta",
+        color: "bg-white",
+        desc: "Tipo esférica de barro mini",
+        img: "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755576237/maseta54_1_awlnwi.jpg",
+      },
+      {
+        id: 55,
+        titulo: "Maceta",
+        color: "bg-white",
+        desc: "Tipo cubo de barro mini",
+        img: "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755576251/maseta55_1_fetfbm.jpg",
+      },
+      {
+        id: 56,
+        titulo: "Maceta",
+        color: "bg-white",
+        desc: "TTipo cubeta de barro mini",
+        img: "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755576272/maseta56_1_ogawk5.jpg",
+      },
+      {
+        id: 57,
+        titulo: "Maceta",
+        color: "bg-white",
+        desc: "Tipo pirámide de barro mini",
+        img: "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755576288/maseta57_1_n0cvsg.jpg",
+      },
     ],
     imagen:
-      "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755235409/maseta33_1_j6g39h.jpg",
+      "https://res.cloudinary.com/dso8cvvoe/image/upload/v1755436889/maseta1_1_n2odtt.jpg",
   },
 ];
 
 const Macetas = () => {
   const [categoriaSeleccionada, setCategoriaSeleccionada] = useState(null);
   const [subIndex, setSubIndex] = useState(0);
+  const [isWide, setIsWide] = useState(false);
 
+  //   const handleDragEnd = (_, info) => {
+  //     if (!categoriaSeleccionada) return;
+  //     const subcards = categoriaSeleccionada.subcards;
+  //     if (info.offset.x < -50 && subIndex < subcards.length - 1) {
+  //       setSubIndex(subIndex + 1);
+  //     } else if (info.offset.x > 50 && subIndex > 0) {
+  //       setSubIndex(subIndex - 1);
+  //     }
+  //   };
+
+  const [direction, setDirection] = useState(null);
   const handleDragEnd = (_, info) => {
     if (!categoriaSeleccionada) return;
     const subcards = categoriaSeleccionada.subcards;
+
     if (info.offset.x < -50 && subIndex < subcards.length - 1) {
+      setDirection("left");
       setSubIndex(subIndex + 1);
     } else if (info.offset.x > 50 && subIndex > 0) {
+      setDirection("right");
       setSubIndex(subIndex - 1);
     }
   };
@@ -316,6 +729,29 @@ const Macetas = () => {
       });
     }
   }, [categoriaSeleccionada]);
+
+  const variants = {
+    enter: { opacity: 0, y: 50 },
+    center: { opacity: 1, y: 0 },
+    exitLeft: {
+      x: -300,
+      opacity: 0,
+      scale: 0.8,
+      transition: { duration: 0.5 },
+    },
+    exitRight: {
+      x: 300,
+      opacity: 0,
+      scale: 0.8,
+      transition: { duration: 0.5 },
+    },
+  };
+
+  function isWideCard(value) {
+    if (value) {
+      setIsWide(true);
+    }
+  }
 
   return (
     <div className="w-full h-fit !min-h-screen !bg-gray-50 overflow-hidden flex flex-col items-center justify-center p-4">
@@ -374,7 +810,11 @@ const Macetas = () => {
 
       {/* Vista de subcards apiladas */}
       {categoriaSeleccionada && (
-        <div className="relative w-64 h-96 flex items-center justify-center">
+        <div
+          className={`relative ${
+            isWide ? "w-84 h-66" : "w-64 h-96"
+          } flex items-center justify-center`}
+        >
           <AnimatePresence>
             {categoriaSeleccionada.subcards.slice(subIndex).map((card, i) => (
               //   <motion.div
@@ -416,7 +856,9 @@ const Macetas = () => {
                 }}
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, scale: 0.8 }}
+                // exit={{ opacity: 0, scale: 0.8 }}
+                exit={direction === "left" ? "exitLeft" : "exitRight"}
+                variants={variants}
                 transition={{ duration: 0.5 }}
                 drag="x"
                 dragConstraints={{ left: 0, right: 0 }}
@@ -426,7 +868,9 @@ const Macetas = () => {
                 <img
                   src={card.img}
                   alt=""
-                  className="absolute !inset-0 !w-full !h-full !object-cover"
+                  className={`absolute !inset-0 !w-full !h-full ${
+                    card.wide ? "" : " !object-cover"
+                  }`}
                 />
                 {card.desc && (
                   <div className="!absolute w-full text-center bg-black/20 !py-2 font-primary !top-0">
