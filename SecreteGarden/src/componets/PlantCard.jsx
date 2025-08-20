@@ -11,6 +11,7 @@ const PlantCard = ({
   clima = "",
   tamanio = "",
   riego,
+  size,
 }) => {
   const [isExpanded, setIsExpanded] = useState(false);
   const cardRef = useRef(null);
@@ -65,7 +66,13 @@ const PlantCard = ({
       <div
         className={` w-[85%] h-[50%] absolute -top-10 left-1/2 transform -translate-x-1/2 z-10`}
       >
-        <img src={image} alt={title} className="w-full rounded-lg h-[50%]" />
+        <img
+          src={image}
+          alt={title}
+          className={`w-full rounded-lg h-[50%] ${
+            size ? `!max-w-[${size}%]` : ""
+          }`}
+        />
       </div>
 
       {/* <h2 className="text-lg font-bold text-center !mt-16 font-primary">
@@ -184,7 +191,7 @@ const PlantCard = ({
                     isExpanded ? "text-[6px]" : "text-xs"
                   } font-thin `}
                 >
-                  {mascotas ? "Amigable" : "Toxica"}
+                  {mascotas}
                 </p>
               </div>
             </div>

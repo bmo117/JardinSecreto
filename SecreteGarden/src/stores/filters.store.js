@@ -8,7 +8,7 @@ const useFilterStore = create((set) => ({
       const prev = state.filtrosSeleccionados[categoria] || [];
 
       let nuevoValor;
-      if (categoria === "Mascotas") {
+      if (categoria === "Mascotas2") {
         nuevoValor = opcion === "Pet friendly" ? [true] : [false];
       } else {
         nuevoValor = prev.includes(opcion)

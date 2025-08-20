@@ -3,13 +3,7 @@ import useFilterStore from "../stores/filters.store";
 const FilterOptionBtn = ({ opcion, categoria }) => {
   const { filtrosSeleccionados, toggleFiltro } = useFilterStore();
 
-  const isActive = filtrosSeleccionados[categoria]?.includes(
-    categoria === "Mascotas"
-      ? opcion === "Pet friendly"
-        ? true
-        : false
-      : opcion
-  );
+  const isActive = filtrosSeleccionados[categoria]?.includes(opcion);
 
   return (
     <button

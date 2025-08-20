@@ -45,6 +45,7 @@ function PlantsView() {
               luz={item.luzRequerida}
               mascotas={item.mascotas}
               riego={item.riego}
+              size={item.size || null}
             />
           ))}
         </div>

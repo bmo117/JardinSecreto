@@ -22,7 +22,7 @@ export const usePlantHook = () => {
       tamanio: ["Grande"],
       riego: ["Bajo mantenimiento (poca agua)"],
       clima: ["Clima templado", "Resistente al calor"],
-      mascotas: true,
+      mascotas: ["Pet friendly"],
     },
     {
       name: "Lemon Cedar Spiral",
@@ -36,7 +36,7 @@ export const usePlantHook = () => {
       tamanio: ["Mediana", "Grande"],
       riego: ["Moderado"],
       clima: ["Clima templado"],
-      mascotas: true,
+      mascotas: ["Pet friendly"],
     },
     {
       name: "Sweetgum",
@@ -50,7 +50,7 @@ export const usePlantHook = () => {
       tamanio: ["Grande"],
       riego: ["Moderado"],
       clima: ["Clima templado", "Resistente al frío"],
-      mascotas: true,
+      mascotas: ["Pet friendly"],
     },
     {
       name: "Maxi Martinel",
@@ -64,7 +64,7 @@ export const usePlantHook = () => {
       tamanio: ["Mediana"],
       riego: ["Moderado"],
       clima: ["Clima templado"],
-      mascotas: true,
+      mascotas: ["Pet friendly"],
     },
     {
       name: "Dollar Tree",
@@ -78,7 +78,7 @@ export const usePlantHook = () => {
       tamanio: ["Mediana"],
       riego: ["Moderado"],
       clima: ["Clima templado"],
-      mascotas: true,
+      mascotas: ["Pet friendly"],
     },
     {
       name: "Eucalyptus",
@@ -92,7 +92,7 @@ export const usePlantHook = () => {
       tamanio: ["Grande"],
       riego: ["Moderado"],
       clima: ["Clima templado", "Resistente al calor"],
-      mascotas: false,
+      mascotas: ["Tóxica para mascotas"],
     },
     {
       name: "Fir Tree",
@@ -660,6 +660,7 @@ export const usePlantHook = () => {
       riego: ["Moderado"],
       clima: ["Clima templado"],
       mascotas: ["Pet friendly"],
+      size: 90,
     },
     {
       name: "Dedo moro azul",
@@ -801,6 +802,7 @@ export const usePlantHook = () => {
       riego: ["Moderado"],
       clima: ["Clima templado"],
       mascotas: ["Pet friendly"],
+      size: 90,
     },
     {
       name: "Corona de cristo",
@@ -829,6 +831,7 @@ export const usePlantHook = () => {
       riego: ["Bajo mantenimiento (poca agua)"],
       clima: ["Clima templado"],
       mascotas: ["Pet friendly"],
+      size: 80,
     },
     {
       name: "Anillo de flores",
@@ -884,6 +887,7 @@ export const usePlantHook = () => {
       riego: ["Bajo mantenimiento (poca agua)"],
       clima: ["Resistente al calor"],
       mascotas: ["Pet friendly"],
+      size: 90,
     },
 
     {
@@ -928,6 +932,7 @@ export const usePlantHook = () => {
       riego: ["Bajo mantenimiento (poca agua)"],
       clima: ["Resistente al calor"],
       mascotas: ["Pet friendly"],
+      size: 90,
     },
     {
       name: "Mammilaria compresa",
@@ -1048,6 +1053,7 @@ export const usePlantHook = () => {
       riego: ["Moderado"],
       clima: ["Clima templado", "Resistente al calor"],
       mascotas: ["Pet friendly"],
+      size: 90,
     },
     {
       name: "Aralia china",
@@ -1062,6 +1068,7 @@ export const usePlantHook = () => {
       riego: ["Moderado"],
       clima: ["Clima templado", "Resistente al frío"],
       mascotas: ["Pet friendly"],
+      size: 90,
     },
     {
       name: "Aralia chiflera",
@@ -1117,6 +1124,7 @@ export const usePlantHook = () => {
       riego: ["Moderado", "Bajo mantenimiento (poca agua)"],
       clima: ["Clima templado", "Resistente al calor"],
       mascotas: ["Pet friendly"],
+      size: 90,
     },
     {
       name: "Muñeca",
@@ -1131,6 +1139,7 @@ export const usePlantHook = () => {
       riego: ["Moderado"],
       clima: ["Clima templado"],
       mascotas: ["Pet friendly"],
+      size: 90,
     },
     {
       name: "Telefono",
@@ -1145,6 +1154,7 @@ export const usePlantHook = () => {
       riego: ["Moderado"],
       clima: ["Clima templado", "Resistente al calor"],
       mascotas: ["Pet friendly"],
+      size: 90,
     },
 
     {
@@ -1206,6 +1216,7 @@ export const usePlantHook = () => {
       riego: ["Moderado", "Requiere riego frecuente"],
       clima: ["Clima templado", "Resistente al calor"],
       mascotas: ["Tóxica para mascotas"],
+      size: 90,
     },
     {
       name: "Colisandra",
@@ -1247,6 +1258,7 @@ export const usePlantHook = () => {
       riego: ["Moderado"],
       clima: ["Clima templado"],
       mascotas: ["Pet friendly"],
+      size: 90,
     },
     {
       name: "Pata de elefante",
@@ -1584,6 +1596,7 @@ export const usePlantHook = () => {
       riego: ["Moderado"],
       clima: ["Clima templado"],
       mascotas: ["Pet friendly"],
+      size: 80,
     },
     {
       name: "Garita de oso",
@@ -1617,9 +1630,10 @@ export const usePlantHook = () => {
   const { filtrosSeleccionados } = useFilterStore();
   const [plants, setPlants] = useState(allPlants);
 
+  console.log(filtrosSeleccionados);
+
   const filteredPlants = useMemo(() => {
     const filters = filtrosSeleccionados;
-
     return allPlants.filter((plant) => {
       const matchTipo =
         !filters.Tipo?.length ||
@@ -1637,7 +1651,8 @@ export const usePlantHook = () => {
         !filters.Clima?.length ||
         filters.Clima.some((clima) => plant.clima.includes(clima));
       const matchMascotas =
-        filters.Mascotas == null || plant.mascotas === filters.Mascotas[0];
+        !filters.Mascotas?.length ||
+        filters.Mascotas.some((mascotas) => plant.mascotas.includes(mascotas));
 
       return (
         matchTipo &&
