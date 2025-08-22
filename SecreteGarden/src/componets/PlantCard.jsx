@@ -60,7 +60,7 @@ const PlantCard = ({
         left: isExpanded ? "50%" : "auto",
       }}
       className={` ${
-        isExpanded ? "h-45" : "h-37"
+        isExpanded ? "h-54" : "h-37"
       } w-[29%]  md:h-80 bg-white/30 !backdrop-blur-md border border-white/30 rounded-lg shadow-md  relative overflow-visible !p-2 !mb-12`}
     >
       <div
@@ -69,7 +69,9 @@ const PlantCard = ({
         <img
           src={image}
           alt={title}
-          className={` rounded-lg !h-[150%] ${size ? `!max-w-[${size}%]` : ""}`}
+          className={`${isExpanded ? "!h-[140%]" : "!h-[150%]"} rounded-lg  ${
+            size ? `!max-w-[${size}%]` : ""
+          } !mb-10px`}
         />
       </div>
 
@@ -77,11 +79,13 @@ const PlantCard = ({
         {title}
       </h2> */}
       <h2
-        className={`text-center !mt-16 font-primary !mb-[6px] !font-semibold ${
+        className={`text-center !mt-20 font-primary !mb-[6px] !font-semibold ${
           title.length > 11 ? "!text-xs" : "!text-xs"
         }`}
       >
-        <p className={`${isExpanded ? "text-[8px]" : "text-xs"}`}>{title}</p>
+        <p className={`${isExpanded ? "text-[8px] !mt-[99%]" : "text-xs"}`}>
+          {title}
+        </p>
       </h2>
       <div className="w-full flex items-center justify-center">
         <p
