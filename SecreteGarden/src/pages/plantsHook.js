@@ -660,7 +660,7 @@ export const usePlantHook = () => {
       riego: ["Moderado"],
       clima: ["Clima templado"],
       mascotas: ["Pet friendly"],
-      size: 90,
+      size: 70,
     },
     {
       name: "Dedo moro azul",

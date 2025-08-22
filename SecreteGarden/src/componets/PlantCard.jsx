@@ -69,9 +69,7 @@ const PlantCard = ({
         <img
           src={image}
           alt={title}
-          className={`w-full rounded-lg h-[50%] ${
-            size ? `!max-w-[${size}%]` : ""
-          }`}
+          className={` rounded-lg !h-[150%] ${size ? `!max-w-[${size}%]` : ""}`}
         />
       </div>
 
